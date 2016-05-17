@@ -36,7 +36,8 @@ body.landing {
     position: relative;
     padding: 2rem;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
+/*
     -webkit-transform: scale(0.5,0.5) translateY(3rem);
     -moz-transform: scaleX(0.9) translateY(3rem);
     -webkit-transition: all 0.25s ease-in-out;
@@ -45,6 +46,7 @@ body.landing {
     -webkit-transition-delay: .2s;
     -moz-transition-delay: .2s;
     transition-delay: .2s;    
+*/
 }
 
 .point:hover {
