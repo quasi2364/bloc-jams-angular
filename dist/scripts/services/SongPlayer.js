@@ -82,6 +82,23 @@
             }
         };
         
+        SongPlayer.next = function() {
+            var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+            currentSongIndex++;
+            
+            if (currentSongIndex > currentAlbum.songs.length - 1 ) {
+                //console.log("last song, index is " + currentSongIndex);
+                var song = currentAlbum.songs[0];
+                setSong(song);
+                playSong(song);
+            } else {
+                //console.log("not last song, index is " + currentSongIndex);
+                var song = currentAlbum.songs[currentSongIndex];
+                setSong(song);
+                playSong(song);
+            }
+        }
+        
         return SongPlayer;
     }
     
